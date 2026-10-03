@@ -154,7 +154,7 @@ To use a different network, add a `build_*` function to `MODEL_REGISTRY` in `bac
 ## Notes
 
 - Tested with Python 3.12, TensorFlow 2.21 / Keras 3.15, Streamlit 1.64.
-- The interface uses DM Sans from Google Fonts; offline it falls back to the system sans-serif.
+- - The interface uses Cormorant Garamond (headings) and Source Sans 3 (text) from Google Fonts; offline it falls back to system fonts.
 - Repeat runs with different `--seed` values before drawing conclusions from small differences; one run is one sample.
 
 ## Update: FHIR report, Medical Journal Pro theme, FedProx option

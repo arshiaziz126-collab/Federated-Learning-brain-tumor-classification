@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-02T21:22:38",
+  "model_status": "Trained",
+  "num_clients": 3,
+  "rounds": 15,
+  "best_round": 5,
+  "test_accuracy": 0.6287878787878788,
+  "test_f1_macro": 0.5444292532258241,
+  "test_images": 1584,
+  "num_classes": 4,
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "partition_mode": "dirichlet",
+  "model_parameters": 299892,
+  "avg_update_bytes": 1206099.4222222222,
+  "raw_data_bytes_total": 126457076,
+  "total_training_transfer_bytes": 108537742,
+  "round_transfer_to_raw_ratio": 0.05721980687475857,
+  "total_transfer_to_raw_ratio": 0.8582971031213785
+}

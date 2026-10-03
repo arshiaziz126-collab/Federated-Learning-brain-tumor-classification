@@ -1,0 +1,152 @@
+{
+  "num_clients": 3,
+  "rounds": 15,
+  "model_parameters": 299892,
+  "model_payload_bytes": 1205840,
+  "avg_update_bytes": 1206099.4222222222,
+  "raw_data_bytes_total": 126457076,
+  "raw_data_bytes_by_client": {
+    "hospital_a": 37384095,
+    "hospital_b": 38737414,
+    "hospital_c": 50335567
+  },
+  "training_uplink_bytes": 54274474,
+  "training_downlink_bytes": 54263268,
+  "total_training_transfer_bytes": 108537742,
+  "evaluation_downlink_bytes": 54264393,
+  "total_transfer_incl_evaluation_bytes": 162802135,
+  "avg_training_bytes_per_round": 7235849.466666667,
+  "ratios": {
+    "update_to_total_raw": 0.009537619090783201,
+    "round_transfer_to_total_raw": 0.05721980687475857,
+    "total_training_transfer_to_total_raw": 0.8582971031213785
+  },
+  "centralized_alternative_bytes": 126457076,
+  "notes": [
+    "Message sizes are the real serialised lengths of the parameter payloads exchanged in the simulation.",
+    "Raw data size is the on-disk size of the image files held by the hospitals (compressed JPEG/PNG).",
+    "Evaluation traffic (clients scoring the global model on local validation data) is reported separately."
+  ],
+  "per_round": [
+    {
+      "round": 1,
+      "downlink_bytes": 3617550,
+      "uplink_bytes": 3618297,
+      "eval_downlink_bytes": 3617625,
+      "training_bytes": 7235847,
+      "cumulative_training_bytes": 7235847
+    },
+    {
+      "round": 2,
+      "downlink_bytes": 3617550,
+      "uplink_bytes": 3618297,
+      "eval_downlink_bytes": 3617625,
+      "training_bytes": 7235847,
+      "cumulative_training_bytes": 14471694
+    },
+    {
+      "round": 3,
+      "downlink_bytes": 3617550,
+      "uplink_bytes": 3618296,
+      "eval_downlink_bytes": 3617625,
+      "training_bytes": 7235846,
+      "cumulative_training_bytes": 21707540
+    },
+    {
+      "round": 4,
+      "downlink_bytes": 3617550,
+      "uplink_bytes": 3618299,
+      "eval_downlink_bytes": 3617625,
+      "training_bytes": 7235849,
+      "cumulative_training_bytes": 28943389
+    },
+    {
+      "round": 5,
+      "downlink_bytes": 3617550,
+      "uplink_bytes": 3618298,
+      "eval_downlink_bytes": 3617625,
+      "training_bytes": 7235848,
+      "cumulative_training_bytes": 36179237
+    },
+    {
+      "round": 6,
+      "downlink_bytes": 3617550,
+      "uplink_bytes": 3618294,
+      "eval_downlink_bytes": 3617625,
+      "training_bytes": 7235844,
+      "cumulative_training_bytes": 43415081
+    },
+    {
+      "round": 7,
+      "downlink_bytes": 3617550,
+      "uplink_bytes": 3618299,
+      "eval_downlink_bytes": 3617625,
+      "training_bytes": 7235849,
+      "cumulative_training_bytes": 50650930
+    },
+    {
+      "round": 8,
+      "downlink_bytes": 3617550,
+      "uplink_bytes": 3618301,
+      "eval_downlink_bytes": 3617625,
+      "training_bytes": 7235851,
+      "cumulative_training_bytes": 57886781
+    },
+    {
+      "round": 9,
+      "downlink_bytes": 3617550,
+      "uplink_bytes": 3618298,
+      "eval_downlink_bytes": 3617625,
+      "training_bytes": 7235848,
+      "cumulative_training_bytes": 65122629
+    },
+    {
+      "round": 10,
+      "downlink_bytes": 3617553,
+      "uplink_bytes": 3618301,
+      "eval_downlink_bytes": 3617628,
+      "training_bytes": 7235854,
+      "cumulative_training_bytes": 72358483
+    },
+    {
+      "round": 11,
+      "downlink_bytes": 3617553,
+      "uplink_bytes": 3618299,
+      "eval_downlink_bytes": 3617628,
+      "training_bytes": 7235852,
+      "cumulative_training_bytes": 79594335
+    },
+    {
+      "round": 12,
+      "downlink_bytes": 3617553,
+      "uplink_bytes": 3618298,
+      "eval_downlink_bytes": 3617628,
+      "training_bytes": 7235851,
+      "cumulative_training_bytes": 86830186
+    },
+    {
+      "round": 13,
+      "downlink_bytes": 3617553,
+      "uplink_bytes": 3618301,
+      "eval_downlink_bytes": 3617628,
+      "training_bytes": 7235854,
+      "cumulative_training_bytes": 94066040
+    },
+    {
+      "round": 14,
+      "downlink_bytes": 3617553,
+      "uplink_bytes": 3618297,
+      "eval_downlink_bytes": 3617628,
+      "training_bytes": 7235850,
+      "cumulative_training_bytes": 101301890
+    },
+    {
+      "round": 15,
+      "downlink_bytes": 3617553,
+      "uplink_bytes": 3618299,
+      "eval_downlink_bytes": 3617628,
+      "training_bytes": 7235852,
+      "cumulative_training_bytes": 108537742
+    }
+  ]
+}

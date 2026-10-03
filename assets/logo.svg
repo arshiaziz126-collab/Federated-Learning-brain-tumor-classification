@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="44" viewBox="0 0 220 44">
+  <circle cx="14" cy="22" r="6" fill="#FFFFFF"/>
+  <circle cx="34" cy="10" r="4" fill="#D9B98A"/>
+  <circle cx="34" cy="34" r="4" fill="#D9B98A"/>
+  <path d="M14 22 L34 10 M14 22 L34 34" stroke="#D9B98A" stroke-width="1.5" fill="none"/>
+  <text x="48" y="30" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="26" font-weight="600" fill="#FFFFFF">NeuroFed AI</text>
+</svg>

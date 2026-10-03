@@ -1,0 +1,223 @@
+{
+  "arch": "cnn",
+  "img_size": 128,
+  "grayscale": true,
+  "input_shape": [
+    128,
+    128,
+    1
+  ],
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "trained_at": "2026-09-20T10:54:24",
+  "best_round": 8,
+  "trainable_parameters": 299892,
+  "architecture": {
+    "name": "neurofed_cnn",
+    "trainable_parameters": 299892,
+    "layers": [
+      {
+        "name": "rescale",
+        "type": "Rescaling",
+        "output_shape": "(128, 128, 1)",
+        "params": 0
+      },
+      {
+        "name": "aug_rotate",
+        "type": "RandomRotation",
+        "output_shape": "(128, 128, 1)",
+        "params": 0
+      },
+      {
+        "name": "aug_zoom",
+        "type": "RandomZoom",
+        "output_shape": "(128, 128, 1)",
+        "params": 0
+      },
+      {
+        "name": "aug_shift",
+        "type": "RandomTranslation",
+        "output_shape": "(128, 128, 1)",
+        "params": 0
+      },
+      {
+        "name": "conv1_1",
+        "type": "Conv2D",
+        "output_shape": "(128, 128, 16)",
+        "params": 144
+      },
+      {
+        "name": "gn1_1",
+        "type": "GroupNormalization",
+        "output_shape": "(128, 128, 16)",
+        "params": 32
+      },
+      {
+        "name": "relu1_1",
+        "type": "ReLU",
+        "output_shape": "(128, 128, 16)",
+        "params": 0
+      },
+      {
+        "name": "pool1",
+        "type": "MaxPooling2D",
+        "output_shape": "(64, 64, 16)",
+        "params": 0
+      },
+      {
+        "name": "conv2_1",
+        "type": "Conv2D",
+        "output_shape": "(64, 64, 32)",
+        "params": 4608
+      },
+      {
+        "name": "gn2_1",
+        "type": "GroupNormalization",
+        "output_shape": "(64, 64, 32)",
+        "params": 64
+      },
+      {
+        "name": "relu2_1",
+        "type": "ReLU",
+        "output_shape": "(64, 64, 32)",
+        "params": 0
+      },
+      {
+        "name": "conv2_2",
+        "type": "Conv2D",
+        "output_shape": "(64, 64, 32)",
+        "params": 9216
+      },
+      {
+        "name": "gn2_2",
+        "type": "GroupNormalization",
+        "output_shape": "(64, 64, 32)",
+        "params": 64
+      },
+      {
+        "name": "relu2_2",
+        "type": "ReLU",
+        "output_shape": "(64, 64, 32)",
+        "params": 0
+      },
+      {
+        "name": "pool2",
+        "type": "MaxPooling2D",
+        "output_shape": "(32, 32, 32)",
+        "params": 0
+      },
+      {
+        "name": "conv3_1",
+        "type": "Conv2D",
+        "output_shape": "(32, 32, 64)",
+        "params": 18432
+      },
+      {
+        "name": "gn3_1",
+        "type": "GroupNormalization",
+        "output_shape": "(32, 32, 64)",
+        "params": 128
+      },
+      {
+        "name": "relu3_1",
+        "type": "ReLU",
+        "output_shape": "(32, 32, 64)",
+        "params": 0
+      },
+      {
+        "name": "conv3_2",
+        "type": "Conv2D",
+        "output_shape": "(32, 32, 64)",
+        "params": 36864
+      },
+      {
+        "name": "gn3_2",
+        "type": "GroupNormalization",
+        "output_shape": "(32, 32, 64)",
+        "params": 128
+      },
+      {
+        "name": "relu3_2",
+        "type": "ReLU",
+        "output_shape": "(32, 32, 64)",
+        "params": 0
+      },
+      {
+        "name": "pool3",
+        "type": "MaxPooling2D",
+        "output_shape": "(16, 16, 64)",
+        "params": 0
+      },
+      {
+        "name": "conv4_1",
+        "type": "Conv2D",
+        "output_shape": "(16, 16, 128)",
+        "params": 73728
+      },
+      {
+        "name": "gn4_1",
+        "type": "GroupNormalization",
+        "output_shape": "(16, 16, 128)",
+        "params": 256
+      },
+      {
+        "name": "relu4_1",
+        "type": "ReLU",
+        "output_shape": "(16, 16, 128)",
+        "params": 0
+      },
+      {
+        "name": "conv4_2",
+        "type": "Conv2D",
+        "output_shape": "(16, 16, 128)",
+        "params": 147456
+      },
+      {
+        "name": "gn4_2",
+        "type": "GroupNormalization",
+        "output_shape": "(16, 16, 128)",
+        "params": 256
+      },
+      {
+        "name": "relu4_2",
+        "type": "ReLU",
+        "output_shape": "(16, 16, 128)",
+        "params": 0
+      },
+      {
+        "name": "pool4",
+        "type": "MaxPooling2D",
+        "output_shape": "(8, 8, 128)",
+        "params": 0
+      },
+      {
+        "name": "gap",
+        "type": "GlobalAveragePooling2D",
+        "output_shape": "(128,)",
+        "params": 0
+      },
+      {
+        "name": "dropout",
+        "type": "Dropout",
+        "output_shape": "(128,)",
+        "params": 0
+      },
+      {
+        "name": "fc",
+        "type": "Dense",
+        "output_shape": "(64,)",
+        "params": 8256
+      },
+      {
+        "name": "classifier",
+        "type": "Dense",
+        "output_shape": "(4,)",
+        "params": 260
+      }
+    ]
+  }
+}

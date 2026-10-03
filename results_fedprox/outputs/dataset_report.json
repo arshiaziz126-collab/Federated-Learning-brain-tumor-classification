@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-10-02T20:41:06",
+  "dataset_root": "C:\\Users\\arshi\\Downloads\\NeuroFed-AI-FINAL\\NeuroFed-AI\\data\\brain_tumor_dataset",
+  "structure": "pre-split folders (test, train) containing class sub-folders",
+  "has_predefined_test_split": true,
+  "splits_found": [
+    "test",
+    "train"
+  ],
+  "total_files_scanned": 7200,
+  "valid_images": 7200,
+  "corrupted_images": 0,
+  "corrupted_examples": [],
+  "unlabeled_images": 0,
+  "non_image_files_by_extension": {},
+  "num_classes": 4,
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "class_counts": {
+    "glioma": 1800,
+    "meningioma": 1800,
+    "notumor": 1800,
+    "pituitary": 1800
+  },
+  "split_class_counts": {
+    "test": {
+      "glioma": 400,
+      "meningioma": 400,
+      "notumor": 400,
+      "pituitary": 400
+    },
+    "train": {
+      "glioma": 1400,
+      "meningioma": 1400,
+      "notumor": 1400,
+      "pituitary": 1400
+    }
+  },
+  "class_imbalance_ratio": 1.0,
+  "image_formats": {
+    ".jpg": 7200
+  },
+  "color_modes": {
+    "RGB": 4129,
+    "L": 3067,
+    "RGBA": 3,
+    "P": 1
+  },
+  "dimensions": {
+    "min_width": 150,
+    "max_width": 1375,
+    "min_height": 167,
+    "max_height": 1446,
+    "mean_width": 453.30291666666665,
+    "mean_height": 456.89916666666664,
+    "unique_sizes": 447,
+    "most_common": [
+      {
+        "size": "512x512",
+        "count": 5014
+      },
+      {
+        "size": "225x225",
+        "count": 338
+      },
+      {
+        "size": "630x630",
+        "count": 90
+      },
+      {
+        "size": "201x251",
+        "count": 57
+      },
+      {
+        "size": "228x221",
+        "count": 51
+      }
+    ]
+  },
+  "total_bytes": 167848957,
+  "duplicates": {
+    "duplicate_groups": 153,
+    "redundant_copies": 187,
+    "groups_spanning_splits": 0,
+    "groups_with_conflicting_labels": 0,
+    "examples": [
+      [
+        "Testing/glioma/Te-gl_129.jpg",
+        "Testing/glioma/Te-gl_303.jpg"
+      ],
+      [
+        "Testing/glioma/Te-gl_140.jpg",
+        "Testing/glioma/Te-gl_238.jpg"
+      ],
+      [
+        "Testing/glioma/Te-gl_143.jpg",
+        "Testing/glioma/Te-gl_72.jpg"
+      ],
+      [
+        "Testing/glioma/Te-gl_144.jpg",
+        "Testing/glioma/Te-gl_59.jpg"
+      ],
+      [
+        "Testing/glioma/Te-gl_166.jpg",
+        "Testing/glioma/Te-gl_278.jpg"
+      ]
+    ],
+    "method": "exact byte-identical files (MD5); near-duplicates are not detected"
+  }
+}

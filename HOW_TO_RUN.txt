@@ -1,0 +1,20 @@
+NeuroFed AI - how to run
+========================
+
+Run every command from THIS folder (the one that contains app.py).
+
+Dashboard (no dataset or training needed - trained models are included):
+      pip install -r requirements.txt
+      streamlit run app.py
+
+Retraining (optional) - put the Kaggle dataset here first:
+      data\brain_tumor_dataset\Training\...
+      data\brain_tumor_dataset\Testing\...
+
+  Same pipeline as the paper (FedAvg + centralized baseline):
+      python federated_train.py
+
+  FedProx on the same pipeline, for a FedAvg vs FedProx table (federated only):
+      python federated_train.py --algorithm fedprox --mu 0.01 --skip-centralized --tag fedprox
+
+results_v1\ holds the results reported in the paper (federated 63.6 %, centralized 85.0 %).

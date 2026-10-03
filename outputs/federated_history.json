@@ -1,0 +1,1022 @@
+[
+  {
+    "round": 1,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.8115742802619934,
+        "local_train_accuracy": 0.6554487347602844,
+        "local_val_loss": 0.5888293981552124,
+        "local_val_accuracy": 0.8127853881278538,
+        "train_seconds": 47.08212899998762,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 1.7639273405075073,
+        "global_on_local_val_accuracy": 0.1004566210045662
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.8355910778045654,
+        "local_train_accuracy": 0.6480099558830261,
+        "local_val_loss": 0.5560447573661804,
+        "local_val_accuracy": 0.8262411347517731,
+        "train_seconds": 54.44260579999536,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 0.869933545589447,
+        "global_on_local_val_accuracy": 0.6170212765957447
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.8398540019989014,
+        "local_train_accuracy": 0.6660988330841064,
+        "local_val_loss": 0.714261531829834,
+        "local_val_accuracy": 0.752411575562701,
+        "train_seconds": 59.66688599996269,
+        "update_bytes": 1206085,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 2.2948758602142334,
+        "global_on_local_val_accuracy": 0.04180064308681672
+      }
+    ],
+    "global_val_loss": 1.656807561519698,
+    "global_val_accuracy": 0.25738916256157635,
+    "global_test": {
+      "loss": 1.6892167329788208,
+      "accuracy": 0.24368686868686867,
+      "precision_macro": 0.06092171717171717,
+      "recall_macro": 0.25,
+      "f1_macro": 0.09796954314720813
+    },
+    "round_seconds": 184.57184769999003
+  },
+  {
+    "round": 2,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.8353813290596008,
+        "local_train_accuracy": 0.6466346383094788,
+        "local_val_loss": 0.7523019313812256,
+        "local_val_accuracy": 0.6484018264840182,
+        "train_seconds": 46.2948515000171,
+        "update_bytes": 1206086,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 1.0328706502914429,
+        "global_on_local_val_accuracy": 0.5342465753424658
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.4145309031009674,
+        "local_train_accuracy": 0.871268630027771,
+        "local_val_loss": 1.0912727117538452,
+        "local_val_accuracy": 0.5673758865248227,
+        "train_seconds": 56.89598869998008,
+        "update_bytes": 1206086,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 1.4776049852371216,
+        "global_on_local_val_accuracy": 0.2695035460992908
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.7776980996131897,
+        "local_train_accuracy": 0.7098239660263062,
+        "local_val_loss": 0.672823429107666,
+        "local_val_accuracy": 0.7620578778135049,
+        "train_seconds": 60.37090839998564,
+        "update_bytes": 1206086,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.5728703737258911,
+        "global_on_local_val_accuracy": 0.2765273311897106
+      }
+    ],
+    "global_val_loss": 1.3941452764525202,
+    "global_val_accuracy": 0.3435960591133005,
+    "global_test": {
+      "loss": 1.4520336389541626,
+      "accuracy": 0.3125,
+      "precision_macro": 0.16150854513584575,
+      "recall_macro": 0.3115284974093264,
+      "f1_macro": 0.18869221334010067
+    },
+    "round_seconds": 186.14464259997476
+  },
+  {
+    "round": 3,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.4768522083759308,
+        "local_train_accuracy": 0.8028846383094788,
+        "local_val_loss": 1.0692838430404663,
+        "local_val_accuracy": 0.5570776255707762,
+        "train_seconds": 45.100646600010805,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.9253808259963989,
+        "global_on_local_val_accuracy": 0.7488584474885844
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.3350359797477722,
+        "local_train_accuracy": 0.9017412662506104,
+        "local_val_loss": 1.579306960105896,
+        "local_val_accuracy": 0.574468085106383,
+        "train_seconds": 58.35531529999571,
+        "update_bytes": 1206085,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 0.9738433957099915,
+        "global_on_local_val_accuracy": 0.7553191489361702
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.7601993083953857,
+        "local_train_accuracy": 0.7024418115615845,
+        "local_val_loss": 0.6753025650978088,
+        "local_val_accuracy": 0.8006430868167203,
+        "train_seconds": 61.08870799996657,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.1912816762924194,
+        "global_on_local_val_accuracy": 0.28938906752411575
+      }
+    ],
+    "global_val_loss": 1.0440527583871568,
+    "global_val_accuracy": 0.5751231527093597,
+    "global_test": {
+      "loss": 1.1348339319229126,
+      "accuracy": 0.5372474747474747,
+      "precision_macro": 0.4333854762754061,
+      "recall_macro": 0.5386075129533678,
+      "f1_macro": 0.46445203365870646
+    },
+    "round_seconds": 186.8324795999797
+  },
+  {
+    "round": 4,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.3821338713169098,
+        "local_train_accuracy": 0.870192289352417,
+        "local_val_loss": 1.9117172956466675,
+        "local_val_accuracy": 0.4520547945205479,
+        "train_seconds": 43.523773699998856,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.6570867896080017,
+        "global_on_local_val_accuracy": 0.7077625570776256
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.32972580194473267,
+        "local_train_accuracy": 0.89552241563797,
+        "local_val_loss": 1.2067972421646118,
+        "local_val_accuracy": 0.6595744680851063,
+        "train_seconds": 55.49837370001478,
+        "update_bytes": 1206086,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 0.8075816631317139,
+        "global_on_local_val_accuracy": 0.723404255319149
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.6840599179267883,
+        "local_train_accuracy": 0.7524133920669556,
+        "local_val_loss": 0.5883365869522095,
+        "local_val_accuracy": 0.8295819935691319,
+        "train_seconds": 60.87933869997505,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.6781412363052368,
+        "global_on_local_val_accuracy": 0.1832797427652733
+      }
+    ],
+    "global_val_loss": 1.1004211335199807,
+    "global_val_accuracy": 0.5123152709359606,
+    "global_test": {
+      "loss": 1.385569453239441,
+      "accuracy": 0.4671717171717172,
+      "precision_macro": 0.41286816984110275,
+      "recall_macro": 0.4663762953367876,
+      "f1_macro": 0.3955286633194894
+    },
+    "round_seconds": 181.9458804000169
+  },
+  {
+    "round": 5,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.31641286611557007,
+        "local_train_accuracy": 0.8886218070983887,
+        "local_val_loss": 1.133599877357483,
+        "local_val_accuracy": 0.4794520547945205,
+        "train_seconds": 44.08765190001577,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.828498899936676,
+        "global_on_local_val_accuracy": 0.7077625570776256
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.2862372398376465,
+        "local_train_accuracy": 0.9210199117660522,
+        "local_val_loss": 1.5764856338500977,
+        "local_val_accuracy": 0.574468085106383,
+        "train_seconds": 55.03412120003486,
+        "update_bytes": 1206086,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 0.6759036183357239,
+        "global_on_local_val_accuracy": 0.7943262411347518
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.6762543320655823,
+        "local_train_accuracy": 0.7546848654747009,
+        "local_val_loss": 0.7379844188690186,
+        "local_val_accuracy": 0.7234726688102894,
+        "train_seconds": 60.47212389996275,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.290945053100586,
+        "global_on_local_val_accuracy": 0.2540192926045016
+      }
+    ],
+    "global_val_loss": 0.9526231415900104,
+    "global_val_accuracy": 0.5640394088669951,
+    "global_test": {
+      "loss": 1.0916357040405273,
+      "accuracy": 0.5056818181818182,
+      "precision_macro": 0.4802565018533488,
+      "recall_macro": 0.507968876116333,
+      "f1_macro": 0.44948964473404285
+    },
+    "round_seconds": 181.44271269999444
+  },
+  {
+    "round": 6,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.3388810157775879,
+        "local_train_accuracy": 0.8846153616905212,
+        "local_val_loss": 0.4178050756454468,
+        "local_val_accuracy": 0.821917808219178,
+        "train_seconds": 39.372615800006315,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.2455597221851349,
+        "global_on_local_val_accuracy": 0.954337899543379
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.35981523990631104,
+        "local_train_accuracy": 0.8961442708969116,
+        "local_val_loss": 0.5480045676231384,
+        "local_val_accuracy": 0.8049645390070922,
+        "train_seconds": 42.98225340002682,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 0.6557675004005432,
+        "global_on_local_val_accuracy": 0.7978723404255319
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.5671247839927673,
+        "local_train_accuracy": 0.7984099984169006,
+        "local_val_loss": 0.5149566531181335,
+        "local_val_accuracy": 0.8360128617363344,
+        "train_seconds": 45.13597949995892,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.2962157726287842,
+        "global_on_local_val_accuracy": 0.3215434083601286
+      }
+    ],
+    "global_val_loss": 0.7904274871416868,
+    "global_val_accuracy": 0.6576354679802956,
+    "global_test": {
+      "loss": 0.976987898349762,
+      "accuracy": 0.634469696969697,
+      "precision_macro": 0.4738754053520522,
+      "recall_macro": 0.6333613989637306,
+      "f1_macro": 0.5375819732526048
+    },
+    "round_seconds": 145.4143559000222
+  },
+  {
+    "round": 7,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.23267054557800293,
+        "local_train_accuracy": 0.9182692170143127,
+        "local_val_loss": 0.7334462404251099,
+        "local_val_accuracy": 0.6894977168949772,
+        "train_seconds": 34.40659179998329,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.917452335357666,
+        "global_on_local_val_accuracy": 0.6301369863013698
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.24968504905700684,
+        "local_train_accuracy": 0.9253731369972229,
+        "local_val_loss": 2.8950271606445312,
+        "local_val_accuracy": 0.4326241134751773,
+        "train_seconds": 46.74518430000171,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 1.2787591218948364,
+        "global_on_local_val_accuracy": 0.5851063829787234
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.6556141376495361,
+        "local_train_accuracy": 0.7399204969406128,
+        "local_val_loss": 0.5809669494628906,
+        "local_val_accuracy": 0.8167202572347267,
+        "train_seconds": 47.32937769999262,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.8817169666290283,
+        "global_on_local_val_accuracy": 0.2057877813504823
+      }
+    ],
+    "global_val_loss": 1.412248904481897,
+    "global_val_accuracy": 0.45197044334975367,
+    "global_test": {
+      "loss": 1.7573997974395752,
+      "accuracy": 0.39835858585858586,
+      "precision_macro": 0.44089144114489737,
+      "recall_macro": 0.396475512276408,
+      "f1_macro": 0.3270317117630653
+    },
+    "round_seconds": 146.7572207999765
+  },
+  {
+    "round": 8,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.2244703769683838,
+        "local_train_accuracy": 0.9230769276618958,
+        "local_val_loss": 0.42677074670791626,
+        "local_val_accuracy": 0.8401826484018264,
+        "train_seconds": 34.337041099963244,
+        "update_bytes": 1206089,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.22192128002643585,
+        "global_on_local_val_accuracy": 0.954337899543379
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.23107154667377472,
+        "local_train_accuracy": 0.93034827709198,
+        "local_val_loss": 0.5120919942855835,
+        "local_val_accuracy": 0.8439716312056738,
+        "train_seconds": 42.417328999959864,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 0.637302815914154,
+        "global_on_local_val_accuracy": 0.776595744680851
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.5915157198905945,
+        "local_train_accuracy": 0.7876206636428833,
+        "local_val_loss": 0.5777773261070251,
+        "local_val_accuracy": 0.7845659163987139,
+        "train_seconds": 46.35123770002974,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.2323923110961914,
+        "global_on_local_val_accuracy": 0.3536977491961415
+      }
+    ],
+    "global_val_loss": 0.7531947822222862,
+    "global_val_accuracy": 0.6625615763546798,
+    "global_test": {
+      "loss": 0.9758463501930237,
+      "accuracy": 0.6363636363636364,
+      "precision_macro": 0.6155960155136859,
+      "recall_macro": 0.6349403429062411,
+      "f1_macro": 0.5506916028489398
+    },
+    "round_seconds": 140.77839629998198
+  },
+  {
+    "round": 9,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.23694512248039246,
+        "local_train_accuracy": 0.9190705418586731,
+        "local_val_loss": 1.2966654300689697,
+        "local_val_accuracy": 0.5205479452054794,
+        "train_seconds": 34.21730090002529,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.9555966854095459,
+        "global_on_local_val_accuracy": 0.6210045662100456
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.23461705446243286,
+        "local_train_accuracy": 0.9371890425682068,
+        "local_val_loss": 1.472554087638855,
+        "local_val_accuracy": 0.5957446808510638,
+        "train_seconds": 42.5108026000089,
+        "update_bytes": 1206086,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 1.3113840818405151,
+        "global_on_local_val_accuracy": 0.5354609929078015
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.5543370246887207,
+        "local_train_accuracy": 0.7853492498397827,
+        "local_val_loss": 0.6666600108146667,
+        "local_val_accuracy": 0.7491961414790996,
+        "train_seconds": 45.78492250002455,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.7103092670440674,
+        "global_on_local_val_accuracy": 0.22508038585209003
+      }
+    ],
+    "global_val_loss": 1.3682169547221932,
+    "global_val_accuracy": 0.4396551724137931,
+    "global_test": {
+      "loss": 1.6937804222106934,
+      "accuracy": 0.4015151515151515,
+      "precision_macro": 0.4747057281580843,
+      "recall_macro": 0.3993396874267712,
+      "f1_macro": 0.33970191629632296
+    },
+    "round_seconds": 139.98088310001185
+  },
+  {
+    "round": 10,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.20661777257919312,
+        "local_train_accuracy": 0.9358974099159241,
+        "local_val_loss": 2.732743501663208,
+        "local_val_accuracy": 0.4246575342465753,
+        "train_seconds": 34.33744229999138,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.5027754902839661,
+        "global_on_local_val_accuracy": 0.8036529680365296
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.231048122048378,
+        "local_train_accuracy": 0.9347015023231506,
+        "local_val_loss": 0.9413496255874634,
+        "local_val_accuracy": 0.7198581560283688,
+        "train_seconds": 44.261251399992034,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 1.0074762105941772,
+        "global_on_local_val_accuracy": 0.648936170212766
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.5338744521141052,
+        "local_train_accuracy": 0.8109028935432434,
+        "local_val_loss": 0.536135196685791,
+        "local_val_accuracy": 0.8231511254019293,
+        "train_seconds": 45.72313280001981,
+        "update_bytes": 1206087,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.513859748840332,
+        "global_on_local_val_accuracy": 0.3086816720257235
+      }
+    ],
+    "global_val_loss": 1.0653035783855787,
+    "global_val_accuracy": 0.5603448275862069,
+    "global_test": {
+      "loss": 1.4282312393188477,
+      "accuracy": 0.5347222222222222,
+      "precision_macro": 0.5336876365952448,
+      "recall_macro": 0.5321088603639961,
+      "f1_macro": 0.46812760894904815
+    },
+    "round_seconds": 142.2187174000428
+  },
+  {
+    "round": 11,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.26320767402648926,
+        "local_train_accuracy": 0.9086538553237915,
+        "local_val_loss": 0.8737607002258301,
+        "local_val_accuracy": 0.589041095890411,
+        "train_seconds": 33.46248609997565,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.6995156407356262,
+        "global_on_local_val_accuracy": 0.6940639269406392
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.25041651725769043,
+        "local_train_accuracy": 0.9315920472145081,
+        "local_val_loss": 0.8710458278656006,
+        "local_val_accuracy": 0.74822695035461,
+        "train_seconds": 42.082138300000224,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 1.100031852722168,
+        "global_on_local_val_accuracy": 0.6134751773049646
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.6718183755874634,
+        "local_train_accuracy": 0.7336740493774414,
+        "local_val_loss": 0.6777872443199158,
+        "local_val_accuracy": 0.7845659163987139,
+        "train_seconds": 46.03015020000748,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.6229103803634644,
+        "global_on_local_val_accuracy": 0.24758842443729903
+      }
+    ],
+    "global_val_loss": 1.1922759065046686,
+    "global_val_accuracy": 0.49507389162561577,
+    "global_test": {
+      "loss": 1.5259588956832886,
+      "accuracy": 0.45202020202020204,
+      "precision_macro": 0.4966770548533621,
+      "recall_macro": 0.44991022144400755,
+      "f1_macro": 0.3933891018914858
+    },
+    "round_seconds": 139.27907869999763
+  },
+  {
+    "round": 12,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.2436145842075348,
+        "local_train_accuracy": 0.9126602411270142,
+        "local_val_loss": 2.357058525085449,
+        "local_val_accuracy": 0.4383561643835616,
+        "train_seconds": 34.262459599995054,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.4053802490234375,
+        "global_on_local_val_accuracy": 0.867579908675799
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.2275681495666504,
+        "local_train_accuracy": 0.927860677242279,
+        "local_val_loss": 0.17846161127090454,
+        "local_val_accuracy": 0.9468085106382979,
+        "train_seconds": 43.25378609995823,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 0.7713316679000854,
+        "global_on_local_val_accuracy": 0.7127659574468085
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.5090939998626709,
+        "local_train_accuracy": 0.813174307346344,
+        "local_val_loss": 0.5537698268890381,
+        "local_val_accuracy": 0.8135048231511254,
+        "train_seconds": 46.541724500013515,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.3784538507461548,
+        "global_on_local_val_accuracy": 0.3408360128617363
+      }
+    ],
+    "global_val_loss": 0.905163734564053,
+    "global_val_accuracy": 0.6120689655172413,
+    "global_test": {
+      "loss": 1.225340723991394,
+      "accuracy": 0.5738636363636364,
+      "precision_macro": 0.5824612199304346,
+      "recall_macro": 0.571882078787721,
+      "f1_macro": 0.5100806329983107
+    },
+    "round_seconds": 141.52584669995122
+  },
+  {
+    "round": 13,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.26816052198410034,
+        "local_train_accuracy": 0.90625,
+        "local_val_loss": 2.041156768798828,
+        "local_val_accuracy": 0.45662100456621,
+        "train_seconds": 33.77491520001786,
+        "update_bytes": 1206075,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.4929676353931427,
+        "global_on_local_val_accuracy": 0.776255707762557
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.19626127183437347,
+        "local_train_accuracy": 0.9440298676490784,
+        "local_val_loss": 0.5699470639228821,
+        "local_val_accuracy": 0.8156028368794326,
+        "train_seconds": 43.89196849998552,
+        "update_bytes": 1206089,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 0.8963876366615295,
+        "global_on_local_val_accuracy": 0.6631205673758865
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.4924929738044739,
+        "local_train_accuracy": 0.8109028935432434,
+        "local_val_loss": 0.6551448702812195,
+        "local_val_accuracy": 0.7491961414790996,
+        "train_seconds": 45.779879999987315,
+        "update_bytes": 1206089,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.3816131353378296,
+        "global_on_local_val_accuracy": 0.3504823151125402
+      }
+    ],
+    "global_val_loss": 0.973427230024279,
+    "global_val_accuracy": 0.5738916256157636,
+    "global_test": {
+      "loss": 1.327737808227539,
+      "accuracy": 0.5397727272727273,
+      "precision_macro": 0.5575237379898942,
+      "recall_macro": 0.5373983583721718,
+      "f1_macro": 0.4879866129761127
+    },
+    "round_seconds": 141.20069070003228
+  },
+  {
+    "round": 14,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.20729580521583557,
+        "local_train_accuracy": 0.9334936141967773,
+        "local_val_loss": 0.358722448348999,
+        "local_val_accuracy": 0.8812785388127854,
+        "train_seconds": 33.58864040003391,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.5121148228645325,
+        "global_on_local_val_accuracy": 0.7945205479452054
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.19674032926559448,
+        "local_train_accuracy": 0.94465172290802,
+        "local_val_loss": 1.040621042251587,
+        "local_val_accuracy": 0.7269503546099291,
+        "train_seconds": 42.32868820003932,
+        "update_bytes": 1206086,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 1.1521817445755005,
+        "global_on_local_val_accuracy": 0.549645390070922
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.4721248149871826,
+        "local_train_accuracy": 0.8250993490219116,
+        "local_val_loss": 0.5884171724319458,
+        "local_val_accuracy": 0.8520900321543409,
+        "train_seconds": 46.49279280001065,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.4342471361160278,
+        "global_on_local_val_accuracy": 0.3247588424437299
+      }
+    ],
+    "global_val_loss": 1.087585292499641,
+    "global_val_accuracy": 0.5295566502463054,
+    "global_test": {
+      "loss": 1.4209978580474854,
+      "accuracy": 0.49747474747474746,
+      "precision_macro": 0.5373278457653458,
+      "recall_macro": 0.49427345601062306,
+      "f1_macro": 0.43866267134463244
+    },
+    "round_seconds": 140.35243460000493
+  },
+  {
+    "round": 15,
+    "participating_clients": [
+      "hospital_a",
+      "hospital_b",
+      "hospital_c"
+    ],
+    "clients": [
+      {
+        "client_id": "hospital_a",
+        "name": "Hospital A",
+        "num_train": 1248,
+        "num_val": 219,
+        "participated": true,
+        "local_train_loss": 0.20012910664081573,
+        "local_train_accuracy": 0.9270833134651184,
+        "local_val_loss": 1.137924313545227,
+        "local_val_accuracy": 0.5525114155251142,
+        "train_seconds": 33.98739389999537,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.27030539311241064,
+        "global_on_local_val_loss": 0.41081252694129944,
+        "global_on_local_val_accuracy": 0.8493150684931506
+      },
+      {
+        "client_id": "hospital_b",
+        "name": "Hospital B",
+        "num_train": 1608,
+        "num_val": 282,
+        "participated": true,
+        "local_train_loss": 0.17713798582553864,
+        "local_train_accuracy": 0.9533582329750061,
+        "local_val_loss": 0.16304786503314972,
+        "local_val_accuracy": 0.950354609929078,
+        "train_seconds": 42.414842600002885,
+        "update_bytes": 1206090,
+        "aggregation_weight": 0.34827810266406756,
+        "global_on_local_val_loss": 0.8678163290023804,
+        "global_on_local_val_accuracy": 0.6595744680851063
+      },
+      {
+        "client_id": "hospital_c",
+        "name": "Hospital C",
+        "num_train": 1761,
+        "num_val": 311,
+        "participated": true,
+        "local_train_loss": 0.4607485830783844,
+        "local_train_accuracy": 0.831345796585083,
+        "local_val_loss": 0.7701109647750854,
+        "local_val_accuracy": 0.7202572347266881,
+        "train_seconds": 46.848074199981056,
+        "update_bytes": 1206088,
+        "aggregation_weight": 0.38141650422352175,
+        "global_on_local_val_loss": 1.3361619710922241,
+        "global_on_local_val_accuracy": 0.3311897106109325
+      }
+    ],
+    "global_val_loss": 0.9239390655030758,
+    "global_val_accuracy": 0.5849753694581281,
+    "global_test": {
+      "loss": 1.2295267581939697,
+      "accuracy": 0.553030303030303,
+      "precision_macro": 0.5542572323949263,
+      "recall_macro": 0.5503590816778191,
+      "f1_macro": 0.49053307576562566
+    },
+    "round_seconds": 140.70994589995826
+  }
+]

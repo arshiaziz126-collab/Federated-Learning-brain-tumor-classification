@@ -1,0 +1,90 @@
+{
+  "algorithm": "fedprox",
+  "mu": 0.01,
+  "best_round": 5,
+  "selection_criterion": "highest federated validation accuracy (hospitals score locally)",
+  "rounds": 15,
+  "local_epochs": 2,
+  "clients_per_round": 3,
+  "training_seconds": 2404.8201938997954,
+  "test": {
+    "num_samples": 1584,
+    "accuracy": 0.6287878787878788,
+    "loss": 1.0060144662857056,
+    "precision_macro": 0.6119795147282836,
+    "recall_macro": 0.6289214368474497,
+    "f1_macro": 0.5444292532258241,
+    "precision_weighted": 0.6129149371626406,
+    "recall_weighted": 0.6287878787878788,
+    "f1_weighted": 0.5445253229547715,
+    "per_class": {
+      "glioma": {
+        "precision": 0.522140221402214,
+        "recall": 0.7331606217616581,
+        "f1": 0.6099137931034483,
+        "support": 386
+      },
+      "meningioma": {
+        "precision": 0.5,
+        "recall": 0.005025125628140704,
+        "f1": 0.009950248756218905,
+        "support": 398
+      },
+      "notumor": {
+        "precision": 0.5996908809891809,
+        "recall": 0.97,
+        "f1": 0.7411652340019103,
+        "support": 400
+      },
+      "pituitary": {
+        "precision": 0.8260869565217391,
+        "recall": 0.8075,
+        "f1": 0.8166877370417194,
+        "support": 400
+      }
+    },
+    "confusion_matrix": [
+      [
+        283,
+        0,
+        67,
+        36
+      ],
+      [
+        216,
+        2,
+        150,
+        30
+      ],
+      [
+        10,
+        0,
+        388,
+        2
+      ],
+      [
+        33,
+        2,
+        42,
+        323
+      ]
+    ],
+    "class_names": [
+      "glioma",
+      "meningioma",
+      "notumor",
+      "pituitary"
+    ]
+  },
+  "test_accuracy_ci95": [
+    0.6047104623712433,
+    0.6522421203045098
+  ],
+  "final_round_test": {
+    "loss": 1.2106114625930786,
+    "accuracy": 0.5763888888888888,
+    "precision_macro": 0.5616646021915318,
+    "recall_macro": 0.573544031686932,
+    "f1_macro": 0.48813066772750685
+  }
+}

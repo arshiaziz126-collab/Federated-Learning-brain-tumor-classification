@@ -1,0 +1,107 @@
+[
+  {
+    "client_id": "hospital_a",
+    "name": "Hospital A",
+    "data_dir": "data/federated_clients/hospital_a",
+    "num_train": 1248,
+    "num_val": 219,
+    "class_counts_train": {
+      "glioma": 128,
+      "meningioma": 2,
+      "notumor": 511,
+      "pituitary": 607
+    },
+    "class_counts_val": {
+      "glioma": 22,
+      "meningioma": 0,
+      "notumor": 90,
+      "pituitary": 107
+    },
+    "raw_data_bytes": 37384095,
+    "rounds_participated": 15,
+    "rounds_total": 15,
+    "status": "Participated in every round",
+    "avg_update_bytes": 1206099.8,
+    "avg_train_seconds_per_round": 43.654726059983176,
+    "at_best_round": {
+      "local_train_loss": 0.3912876424116966,
+      "local_train_accuracy": 0.8549679487179487,
+      "local_val_loss": 0.41904181241989136,
+      "local_val_accuracy": 0.8127853881278538,
+      "global_on_local_val_loss": 0.41279083490371704,
+      "global_on_local_val_accuracy": 0.8904109589041096,
+      "aggregation_weight": 0.27030539311241064
+    },
+    "best_round": 5
+  },
+  {
+    "client_id": "hospital_b",
+    "name": "Hospital B",
+    "data_dir": "data/federated_clients/hospital_b",
+    "num_train": 1608,
+    "num_val": 282,
+    "class_counts_train": {
+      "glioma": 989,
+      "meningioma": 26,
+      "notumor": 518,
+      "pituitary": 75
+    },
+    "class_counts_val": {
+      "glioma": 174,
+      "meningioma": 4,
+      "notumor": 91,
+      "pituitary": 13
+    },
+    "raw_data_bytes": 38737414,
+    "rounds_participated": 15,
+    "rounds_total": 15,
+    "status": "Participated in every round",
+    "avg_update_bytes": 1206099.4,
+    "avg_train_seconds_per_round": 47.28547642004366,
+    "at_best_round": {
+      "local_train_loss": 0.3199577322832091,
+      "local_train_accuracy": 0.9060945273631841,
+      "local_val_loss": 0.19000104069709778,
+      "local_val_accuracy": 0.9326241134751773,
+      "global_on_local_val_loss": 0.3690509796142578,
+      "global_on_local_val_accuracy": 0.9148936170212766,
+      "aggregation_weight": 0.34827810266406756
+    },
+    "best_round": 5
+  },
+  {
+    "client_id": "hospital_c",
+    "name": "Hospital C",
+    "data_dir": "data/federated_clients/hospital_c",
+    "num_train": 1761,
+    "num_val": 311,
+    "class_counts_train": {
+      "glioma": 74,
+      "meningioma": 1151,
+      "notumor": 60,
+      "pituitary": 476
+    },
+    "class_counts_val": {
+      "glioma": 13,
+      "meningioma": 203,
+      "notumor": 11,
+      "pituitary": 84
+    },
+    "raw_data_bytes": 50335567,
+    "rounds_participated": 15,
+    "rounds_total": 15,
+    "status": "Participated in every round",
+    "avg_update_bytes": 1206099.0666666667,
+    "avg_train_seconds_per_round": 50.68408693331294,
+    "at_best_round": {
+      "local_train_loss": 0.621118301427344,
+      "local_train_accuracy": 0.778534923339012,
+      "local_val_loss": 0.48353931307792664,
+      "local_val_accuracy": 0.8392282958199357,
+      "global_on_local_val_loss": 1.4278861284255981,
+      "global_on_local_val_accuracy": 0.29260450160771706,
+      "aggregation_weight": 0.38141650422352175
+    },
+    "best_round": 5
+  }
+]

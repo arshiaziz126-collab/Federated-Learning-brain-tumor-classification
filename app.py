@@ -11,7 +11,11 @@ from views import about, analytics, comparison, diagnose, home, network, privacy
 st.set_page_config(page_title="NeuroFed AI", page_icon=str(config.ROOT / "assets" / "favicon.png"), layout="wide",
                    initial_sidebar_state="expanded")
 inject_css()
-st.logo(str(config.ROOT / "assets" / "logo.svg"), size="large")
+st.logo(
+    str(config.ROOT / "assets" / "logo.svg"),
+    size="large",
+    icon_image=str(config.ROOT / "assets" / "logo_icon.svg"),
+)
 
 pages = [
     st.Page(home.render, title="Home", url_path="home", default=True),

@@ -1,18 +1,6 @@
 [theme]
-primaryColor = "#5B1A24"
-backgroundColor = "#F8F5EF"
-secondaryBackgroundColor = "#F2ECE1"
-textColor = "#211D1A"
-font = "sans serif"
-
-[theme.sidebar]
-backgroundColor = "#4A1620"
-secondaryBackgroundColor = "#5A2430"
-textColor = "#FFFFFF"
-
-[server]
-headless = true
-fileWatcherType = "none"
-
-[browser]
-gatherUsageStats = false
+base = "light"
+primaryColor = "#5F8443"
+backgroundColor = "#F1F3E0"
+secondaryBackgroundColor = "#E1E8CB"
+textColor = "#2E4220"

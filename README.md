@@ -1,5 +1,5 @@
 # NeuroFed AI
-
+🔗 **Live demo:** https://neurofed-ai.streamlit.app
 **Federated Learning Approach for Brain Tumour Classification with Privacy Preservation**
 *Smarter Networks. Healthier Tomorrow.*
 
@@ -29,7 +29,7 @@ streamlit run app.py               # opens the dashboard
 
 Training is deliberately **separate** from the app. `streamlit run app.py` never trains anything; before training
 has been run, the pages show what to do instead of fake numbers.
-<img width="1920" height="1080" alt="Screenshot 2026-09-20 151901" src="https://github.com/user-attachments/assets/abefe465-0b51-4ba8-bac0-e5c0590beb46" />
+
 
 
 ## Dataset
@@ -48,7 +48,6 @@ Nothing about its structure is assumed:
 Before splitting, exact duplicate images are removed (`--no-dedupe` to keep them) so that no image appears in two
 hospitals or in both training and test data.
 
-<img width="1920" height="1080" alt="Screenshot 2026-09-20 151930" src="https://github.com/user-attachments/assets/226f2478-e91b-45a5-b746-24dc787b04f4" />
 
 ## What `federated_train.py` does
 
@@ -65,7 +64,7 @@ hospitals or in both training and test data.
 5. **Centralized baseline**: the same images pooled, same architecture/optimiser/batch size/learning rate, same test
    set, epochs = rounds x local epochs by default.
 6. **Write results**: metrics, communication, privacy report.
-<img width="1920" height="1080" alt="Screenshot 2026-09-20 151946" src="https://github.com/user-attachments/assets/51c1ffd8-e263-436a-8760-b3d3e330d588" />
+
 
 Useful options (`python federated_train.py --help` lists all):
 
@@ -85,7 +84,6 @@ Quick trial: `python federated_train.py --rounds 5 --local-epochs 1 --img-size 9
 Training time depends heavily on your CPU/GPU; with the defaults on a laptop CPU expect on the order of an hour or
 more for the federated run plus a similar time for the centralized baseline (a rough estimate extrapolated from a
 single-core test, not a measured figure for your dataset).
-<img width="1920" height="1080" alt="Screenshot 2026-09-20 152002" src="https://github.com/user-attachments/assets/d2beae0f-b3b6-4e2c-aca4-dcdd24b879b1" />
 
 ## Outputs
 

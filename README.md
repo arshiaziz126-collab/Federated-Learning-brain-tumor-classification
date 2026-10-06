@@ -26,6 +26,7 @@ python inspect_dataset.py          # optional: see what is in the dataset
 python federated_train.py          # trains federated + centralized, writes outputs/ and models/
 streamlit run app.py               # opens the dashboard
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-10-06 112008" src="https://github.com/user-attachments/assets/90d129e8-3657-48f9-8670-6ea48345bd3e" />
 
 Training is deliberately **separate** from the app. `streamlit run app.py` never trains anything; before training
 has been run, the pages show what to do instead of fake numbers.
@@ -47,6 +48,7 @@ Nothing about its structure is assumed:
 
 Before splitting, exact duplicate images are removed (`--no-dedupe` to keep them) so that no image appears in two
 hospitals or in both training and test data.
+<img width="1920" height="1080" alt="Screenshot 2026-10-06 112044" src="https://github.com/user-attachments/assets/3f122a4f-c0d6-4c0e-82df-355e9655e433" />
 
 
 ## What `federated_train.py` does
@@ -67,6 +69,7 @@ hospitals or in both training and test data.
 
 
 Useful options (`python federated_train.py --help` lists all):
+<img width="1920" height="1080" alt="Screenshot 2026-10-06 112057" src="https://github.com/user-attachments/assets/cab507b3-7a03-461b-a106-04ee9cbe9886" />
 
 | Option | Default | Meaning |
 |---|---|---|
@@ -92,6 +95,7 @@ single-core test, not a measured figure for your dataset).
 `outputs/`: `dataset_report.json`, `partition_manifest.json`, `federated_history.json` (per-round, per-hospital),
 `client_metrics.json`, `federated_metrics.json`, `centralized_metrics.json`, `communication_metrics.json`,
 `privacy_report.json`, `experiment_results.json`, `metrics.json`.
+<img width="1920" height="1080" alt="Screenshot 2026-10-06 112117" src="https://github.com/user-attachments/assets/9fce702e-08c8-40b6-8aee-14644d6095e7" />
 
 ## Dashboard pages
 
@@ -112,6 +116,7 @@ Implemented and checked in code:
 **Not implemented** (and not claimed anywhere): differential privacy, secure aggregation, encryption of updates,
 homomorphic encryption. Model updates can leak information about training data. Hospitals are simulated inside one
 Python process; there is no real network.
+<img width="1920" height="1080" alt="Screenshot 2026-10-06 112212" src="https://github.com/user-attachments/assets/8658bded-2b96-4b2c-923d-bef3e48743c1" />
 
 ## Communication numbers
 
@@ -156,6 +161,7 @@ To use a different network, add a `build_*` function to `MODEL_REGISTRY` in `bac
 - Repeat runs with different `--seed` values before drawing conclusions from small differences; one run is one sample.
 
 ## Update: FHIR report, Medical Journal Pro theme, FedProx option
+![Uploading Screenshot 2026-10-06 112227.png…]()
 
 | Area | Change | File |
 |---|---|---|

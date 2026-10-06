@@ -95,7 +95,9 @@ single-core test, not a measured figure for your dataset).
 `outputs/`: `dataset_report.json`, `partition_manifest.json`, `federated_history.json` (per-round, per-hospital),
 `client_metrics.json`, `federated_metrics.json`, `centralized_metrics.json`, `communication_metrics.json`,
 `privacy_report.json`, `experiment_results.json`, `metrics.json`.
-<img width="1920" height="1080" alt="Screenshot 2026-10-06 112117" src="https://github.com/user-attachments/assets/9fce702e-08c8-40b6-8aee-14644d6095e7" />
+<img width="1920" height="1080" alt="Screenshot 2026-10-06 112551" src="https://github.com/user-attachments/assets/2a9771fd-25fb-4ee7-a057-dd979dd3a7ba" />
+
+![Uploading Screenshot 2026-10-06 112610.png…]()
 
 ## Dashboard pages
 

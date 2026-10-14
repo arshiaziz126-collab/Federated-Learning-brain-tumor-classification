@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NeuroFed AI</title>
+<meta name="description" content="Privacy-preserving federated learning for brain tumour MRI classification, with HL7 FHIR R4 reporting. Research prototype.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="side-top">
+      <a class="brand" href="#/" aria-label="NeuroFed AI home">
+        <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="12" cy="20" r="5.5" fill="#fff"/><circle cx="30" cy="9" r="3.6" fill="#9A9A9A"/><circle cx="30" cy="31" r="3.6" fill="#9A9A9A"/><path d="M12 20 L30 9 M12 20 L30 31" stroke="#9A9A9A" stroke-width="1.6" fill="none"/></svg>
+        <span>NeuroFed AI</span>
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+    <nav class="nav" id="nav" aria-label="Pages">
+      <a href="#/">Home</a>
+      <a href="#/diagnose">Diagnose</a>
+      <a href="#/network">Federated network</a>
+      <a href="#/analytics">Federated analytics</a>
+      <a href="#/privacy">Privacy &amp; security</a>
+      <a href="#/comparison">Centralized vs federated</a>
+      <a href="#/about">About</a>
+    </nav>
+    <div class="side-note"><b>Smarter networks. Healthier tomorrow.</b><br>Research prototype. Not a clinical diagnostic tool.</div>
+  </aside>
+  <main><div class="page" id="app" tabindex="-1"><p><span class="spinner"></span>Loading the dashboard…</p></div></main>
+</div>
+<noscript><p style="padding:20px">NeuroFed AI needs JavaScript to run.</p></noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

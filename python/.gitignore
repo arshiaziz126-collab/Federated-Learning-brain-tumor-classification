@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/federated_clients/
+data/brain_tumor_dataset/*
+!data/brain_tumor_dataset/.gitkeep
+
+.venv/

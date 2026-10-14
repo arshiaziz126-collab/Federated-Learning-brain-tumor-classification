@@ -1,0 +1,392 @@
+{
+ "inputShape": [
+  128,
+  128,
+  1
+ ],
+ "layers": [
+  {
+   "type": "Rescaling",
+   "scale": 0.00392156862745098,
+   "offset": 0.0
+  },
+  {
+   "type": "Conv2D",
+   "name": "conv1_1",
+   "useBias": false,
+   "weights": [
+    {
+     "shape": [
+      3,
+      3,
+      1,
+      16
+     ],
+     "offset": 0,
+     "length": 144
+    }
+   ]
+  },
+  {
+   "type": "GroupNormalization",
+   "name": "gn1_1",
+   "groups": 8,
+   "epsilon": 0.001,
+   "weights": [
+    {
+     "shape": [
+      16
+     ],
+     "offset": 144,
+     "length": 16
+    },
+    {
+     "shape": [
+      16
+     ],
+     "offset": 160,
+     "length": 16
+    }
+   ]
+  },
+  {
+   "type": "ReLU",
+   "name": "relu1_1",
+   "weights": []
+  },
+  {
+   "type": "MaxPooling2D",
+   "name": "pool1",
+   "weights": []
+  },
+  {
+   "type": "Conv2D",
+   "name": "conv2_1",
+   "useBias": false,
+   "weights": [
+    {
+     "shape": [
+      3,
+      3,
+      16,
+      32
+     ],
+     "offset": 176,
+     "length": 4608
+    }
+   ]
+  },
+  {
+   "type": "GroupNormalization",
+   "name": "gn2_1",
+   "groups": 8,
+   "epsilon": 0.001,
+   "weights": [
+    {
+     "shape": [
+      32
+     ],
+     "offset": 4784,
+     "length": 32
+    },
+    {
+     "shape": [
+      32
+     ],
+     "offset": 4816,
+     "length": 32
+    }
+   ]
+  },
+  {
+   "type": "ReLU",
+   "name": "relu2_1",
+   "weights": []
+  },
+  {
+   "type": "Conv2D",
+   "name": "conv2_2",
+   "useBias": false,
+   "weights": [
+    {
+     "shape": [
+      3,
+      3,
+      32,
+      32
+     ],
+     "offset": 4848,
+     "length": 9216
+    }
+   ]
+  },
+  {
+   "type": "GroupNormalization",
+   "name": "gn2_2",
+   "groups": 8,
+   "epsilon": 0.001,
+   "weights": [
+    {
+     "shape": [
+      32
+     ],
+     "offset": 14064,
+     "length": 32
+    },
+    {
+     "shape": [
+      32
+     ],
+     "offset": 14096,
+     "length": 32
+    }
+   ]
+  },
+  {
+   "type": "ReLU",
+   "name": "relu2_2",
+   "weights": []
+  },
+  {
+   "type": "MaxPooling2D",
+   "name": "pool2",
+   "weights": []
+  },
+  {
+   "type": "Conv2D",
+   "name": "conv3_1",
+   "useBias": false,
+   "weights": [
+    {
+     "shape": [
+      3,
+      3,
+      32,
+      64
+     ],
+     "offset": 14128,
+     "length": 18432
+    }
+   ]
+  },
+  {
+   "type": "GroupNormalization",
+   "name": "gn3_1",
+   "groups": 8,
+   "epsilon": 0.001,
+   "weights": [
+    {
+     "shape": [
+      64
+     ],
+     "offset": 32560,
+     "length": 64
+    },
+    {
+     "shape": [
+      64
+     ],
+     "offset": 32624,
+     "length": 64
+    }
+   ]
+  },
+  {
+   "type": "ReLU",
+   "name": "relu3_1",
+   "weights": []
+  },
+  {
+   "type": "Conv2D",
+   "name": "conv3_2",
+   "useBias": false,
+   "weights": [
+    {
+     "shape": [
+      3,
+      3,
+      64,
+      64
+     ],
+     "offset": 32688,
+     "length": 36864
+    }
+   ]
+  },
+  {
+   "type": "GroupNormalization",
+   "name": "gn3_2",
+   "groups": 8,
+   "epsilon": 0.001,
+   "weights": [
+    {
+     "shape": [
+      64
+     ],
+     "offset": 69552,
+     "length": 64
+    },
+    {
+     "shape": [
+      64
+     ],
+     "offset": 69616,
+     "length": 64
+    }
+   ]
+  },
+  {
+   "type": "ReLU",
+   "name": "relu3_2",
+   "weights": []
+  },
+  {
+   "type": "MaxPooling2D",
+   "name": "pool3",
+   "weights": []
+  },
+  {
+   "type": "Conv2D",
+   "name": "conv4_1",
+   "useBias": false,
+   "weights": [
+    {
+     "shape": [
+      3,
+      3,
+      64,
+      128
+     ],
+     "offset": 69680,
+     "length": 73728
+    }
+   ]
+  },
+  {
+   "type": "GroupNormalization",
+   "name": "gn4_1",
+   "groups": 8,
+   "epsilon": 0.001,
+   "weights": [
+    {
+     "shape": [
+      128
+     ],
+     "offset": 143408,
+     "length": 128
+    },
+    {
+     "shape": [
+      128
+     ],
+     "offset": 143536,
+     "length": 128
+    }
+   ]
+  },
+  {
+   "type": "ReLU",
+   "name": "relu4_1",
+   "weights": []
+  },
+  {
+   "type": "Conv2D",
+   "name": "conv4_2",
+   "useBias": false,
+   "weights": [
+    {
+     "shape": [
+      3,
+      3,
+      128,
+      128
+     ],
+     "offset": 143664,
+     "length": 147456
+    }
+   ]
+  },
+  {
+   "type": "GroupNormalization",
+   "name": "gn4_2",
+   "groups": 8,
+   "epsilon": 0.001,
+   "weights": [
+    {
+     "shape": [
+      128
+     ],
+     "offset": 291120,
+     "length": 128
+    },
+    {
+     "shape": [
+      128
+     ],
+     "offset": 291248,
+     "length": 128
+    }
+   ]
+  },
+  {
+   "type": "ReLU",
+   "name": "relu4_2",
+   "weights": []
+  },
+  {
+   "type": "MaxPooling2D",
+   "name": "pool4",
+   "weights": []
+  },
+  {
+   "type": "GlobalAveragePooling2D",
+   "name": "gap",
+   "weights": []
+  },
+  {
+   "type": "Dense",
+   "name": "fc",
+   "activation": "relu",
+   "weights": [
+    {
+     "shape": [
+      128,
+      64
+     ],
+     "offset": 291376,
+     "length": 8192
+    },
+    {
+     "shape": [
+      64
+     ],
+     "offset": 299568,
+     "length": 64
+    }
+   ]
+  },
+  {
+   "type": "Dense",
+   "name": "classifier",
+   "activation": "softmax",
+   "weights": [
+    {
+     "shape": [
+      64,
+      4
+     ],
+     "offset": 299632,
+     "length": 256
+    },
+    {
+     "shape": [
+      4
+     ],
+     "offset": 299888,
+     "length": 4
+    }
+   ]
+  }
+ ],
+ "totalFloats": 299892
+}

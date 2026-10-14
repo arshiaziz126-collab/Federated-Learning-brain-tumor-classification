@@ -1,0 +1,88 @@
+{
+  "best_round": 8,
+  "selection_criterion": "highest federated validation accuracy (hospitals score locally)",
+  "rounds": 15,
+  "local_epochs": 2,
+  "clients_per_round": 3,
+  "training_seconds": 2339.1596939999727,
+  "test": {
+    "num_samples": 1584,
+    "accuracy": 0.6363636363636364,
+    "loss": 0.9758463501930237,
+    "precision_macro": 0.6155960155136859,
+    "recall_macro": 0.6349403429062411,
+    "f1_macro": 0.5506916028489398,
+    "precision_weighted": 0.6157293655067819,
+    "recall_weighted": 0.6363636363636364,
+    "f1_weighted": 0.5510178241992486,
+    "per_class": {
+      "glioma": {
+        "precision": 0.6084507042253521,
+        "recall": 0.5595854922279793,
+        "f1": 0.582995951417004,
+        "support": 386
+      },
+      "meningioma": {
+        "precision": 0.56,
+        "recall": 0.035175879396984924,
+        "f1": 0.06619385342789598,
+        "support": 398
+      },
+      "notumor": {
+        "precision": 0.6695352839931153,
+        "recall": 0.9725,
+        "f1": 0.7930682976554536,
+        "support": 400
+      },
+      "pituitary": {
+        "precision": 0.6243980738362761,
+        "recall": 0.9725,
+        "f1": 0.7605083088954057,
+        "support": 400
+      }
+    },
+    "confusion_matrix": [
+      [
+        216,
+        11,
+        68,
+        91
+      ],
+      [
+        136,
+        14,
+        115,
+        133
+      ],
+      [
+        1,
+        0,
+        389,
+        10
+      ],
+      [
+        2,
+        0,
+        9,
+        389
+      ]
+    ],
+    "class_names": [
+      "glioma",
+      "meningioma",
+      "notumor",
+      "pituitary"
+    ]
+  },
+  "test_accuracy_ci95": [
+    0.6123701087485389,
+    0.6596973317316701
+  ],
+  "final_round_test": {
+    "loss": 1.2295267581939697,
+    "accuracy": 0.553030303030303,
+    "precision_macro": 0.5542572323949263,
+    "recall_macro": 0.5503590816778191,
+    "f1_macro": 0.49053307576562566
+  }
+}

@@ -1,0 +1,22 @@
+NeuroFed AI - training code
+===========================
+
+Run every command from THIS folder (the one that contains federated_train.py).
+
+1. Install:
+      pip install -r requirements.txt
+
+2. Put the Kaggle dataset here:
+      data\brain_tumor_dataset\Training\...
+      data\brain_tumor_dataset\Testing\...
+
+3. Train (FedAvg + centralized baseline, same as the paper):
+      python federated_train.py
+
+   FedProx, for the FedAvg vs FedProx table:
+      python federated_train.py --algorithm fedprox --mu 0.01 --skip-centralized --tag fedprox
+
+4. Export the trained models for the website:
+      python tools/export_web_model.py
+
+Trained models are in models\ and results in outputs\.

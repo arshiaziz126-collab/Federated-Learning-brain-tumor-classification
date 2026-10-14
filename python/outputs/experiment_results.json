@@ -1,0 +1,713 @@
+{
+  "generated_at": "2026-09-20T10:54:24",
+  "environment": {
+    "python": "3.11.9",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "config": {
+    "data_dir": null,
+    "num_clients": 3,
+    "rounds": 15,
+    "local_epochs": 2,
+    "batch_size": 32,
+    "lr": 0.001,
+    "img_size": 128,
+    "rgb": false,
+    "arch": "cnn",
+    "partition": "dirichlet",
+    "alpha": 0.5,
+    "val_fraction": 0.15,
+    "test_fraction": 0.15,
+    "client_fraction": 1.0,
+    "centralized_epochs": 30,
+    "skip_centralized": false,
+    "no_dedupe": false,
+    "seed": 42,
+    "grayscale": true
+  },
+  "dataset": {
+    "structure": "pre-split folders (test, train) containing class sub-folders",
+    "valid_images": 7200,
+    "corrupted_images": 0,
+    "num_classes": 4,
+    "class_names": [
+      "glioma",
+      "meningioma",
+      "notumor",
+      "pituitary"
+    ],
+    "class_counts": {
+      "glioma": 1800,
+      "meningioma": 1800,
+      "notumor": 1800,
+      "pituitary": 1800
+    },
+    "total_bytes": 167848957
+  },
+  "partition": {
+    "mode": {
+      "mode": "dirichlet",
+      "alpha": 0.5,
+      "attempts": 1
+    },
+    "seed": 42,
+    "cleaning": {
+      "enabled": true,
+      "dropped_exact_duplicates": 187,
+      "dropped_conflicting_label_images": 0,
+      "dropped_train_copies_of_test_images": 0
+    },
+    "test_source": "test folder that ships with the dataset",
+    "client_train_class_counts": {
+      "Hospital A": {
+        "glioma": 128,
+        "meningioma": 2,
+        "notumor": 511,
+        "pituitary": 607
+      },
+      "Hospital B": {
+        "glioma": 989,
+        "meningioma": 26,
+        "notumor": 518,
+        "pituitary": 75
+      },
+      "Hospital C": {
+        "glioma": 74,
+        "meningioma": 1151,
+        "notumor": 60,
+        "pituitary": 476
+      }
+    }
+  },
+  "federated": {
+    "best_round": 8,
+    "selection_criterion": "highest federated validation accuracy (hospitals score locally)",
+    "rounds": 15,
+    "local_epochs": 2,
+    "clients_per_round": 3,
+    "training_seconds": 2339.1596939999727,
+    "test": {
+      "num_samples": 1584,
+      "accuracy": 0.6363636363636364,
+      "loss": 0.9758463501930237,
+      "precision_macro": 0.6155960155136859,
+      "recall_macro": 0.6349403429062411,
+      "f1_macro": 0.5506916028489398,
+      "precision_weighted": 0.6157293655067819,
+      "recall_weighted": 0.6363636363636364,
+      "f1_weighted": 0.5510178241992486,
+      "per_class": {
+        "glioma": {
+          "precision": 0.6084507042253521,
+          "recall": 0.5595854922279793,
+          "f1": 0.582995951417004,
+          "support": 386
+        },
+        "meningioma": {
+          "precision": 0.56,
+          "recall": 0.035175879396984924,
+          "f1": 0.06619385342789598,
+          "support": 398
+        },
+        "notumor": {
+          "precision": 0.6695352839931153,
+          "recall": 0.9725,
+          "f1": 0.7930682976554536,
+          "support": 400
+        },
+        "pituitary": {
+          "precision": 0.6243980738362761,
+          "recall": 0.9725,
+          "f1": 0.7605083088954057,
+          "support": 400
+        }
+      },
+      "confusion_matrix": [
+        [
+          216,
+          11,
+          68,
+          91
+        ],
+        [
+          136,
+          14,
+          115,
+          133
+        ],
+        [
+          1,
+          0,
+          389,
+          10
+        ],
+        [
+          2,
+          0,
+          9,
+          389
+        ]
+      ],
+      "class_names": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+      ]
+    },
+    "test_accuracy_ci95": [
+      0.6123701087485389,
+      0.6596973317316701
+    ],
+    "final_round_test": {
+      "loss": 1.2295267581939697,
+      "accuracy": 0.553030303030303,
+      "precision_macro": 0.5542572323949263,
+      "recall_macro": 0.5503590816778191,
+      "f1_macro": 0.49053307576562566
+    }
+  },
+  "centralized": {
+    "epochs": 30,
+    "best_epoch": 27,
+    "selection_criterion": "highest validation accuracy (pooled validation data)",
+    "num_train": 4617,
+    "num_val": 812,
+    "training_seconds": 2068.507197699975,
+    "test": {
+      "num_samples": 1584,
+      "accuracy": 0.8503787878787878,
+      "loss": 0.5399214625358582,
+      "precision_macro": 0.8598921077161407,
+      "recall_macro": 0.8488117725935376,
+      "f1_macro": 0.8454380465881715,
+      "precision_weighted": 0.8594026054494807,
+      "recall_weighted": 0.8503787878787878,
+      "f1_weighted": 0.8460374212468695,
+      "per_class": {
+        "glioma": {
+          "precision": 0.916955017301038,
+          "recall": 0.6865284974093264,
+          "f1": 0.7851851851851852,
+          "support": 386
+        },
+        "meningioma": {
+          "precision": 0.8481375358166189,
+          "recall": 0.7437185929648241,
+          "f1": 0.7925033467202142,
+          "support": 398
+        },
+        "notumor": {
+          "precision": 0.7702702702702703,
+          "recall": 0.9975,
+          "f1": 0.869281045751634,
+          "support": 400
+        },
+        "pituitary": {
+          "precision": 0.9042056074766355,
+          "recall": 0.9675,
+          "f1": 0.9347826086956522,
+          "support": 400
+        }
+      },
+      "confusion_matrix": [
+        [
+          265,
+          46,
+          60,
+          15
+        ],
+        [
+          19,
+          296,
+          57,
+          26
+        ],
+        [
+          0,
+          1,
+          399,
+          0
+        ],
+        [
+          5,
+          6,
+          2,
+          387
+        ]
+      ],
+      "class_names": [
+        "glioma",
+        "meningioma",
+        "notumor",
+        "pituitary"
+      ]
+    },
+    "test_accuracy_ci95": [
+      0.831965543125991,
+      0.8670966303301016
+    ],
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 1.3588272333145142,
+        "train_accuracy": 0.31925493478775024,
+        "val_loss": 1.1546502113342285,
+        "val_accuracy": 0.4667487684729064,
+        "test_accuracy": 0.39835858585858586,
+        "test_loss": 1.2457040548324585
+      },
+      {
+        "epoch": 2,
+        "train_loss": 1.176540732383728,
+        "train_accuracy": 0.4301494359970093,
+        "val_loss": 1.0337028503417969,
+        "val_accuracy": 0.5541871921182266,
+        "test_accuracy": 0.514520202020202,
+        "test_loss": 1.1672351360321045
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.8857837319374084,
+        "train_accuracy": 0.60017329454422,
+        "val_loss": 0.8603248000144958,
+        "val_accuracy": 0.6268472906403941,
+        "test_accuracy": 0.5827020202020202,
+        "test_loss": 1.1184089183807373
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.7541704773902893,
+        "train_accuracy": 0.6800953149795532,
+        "val_loss": 0.9259044528007507,
+        "val_accuracy": 0.5825123152709359,
+        "test_accuracy": 0.5467171717171717,
+        "test_loss": 1.1884158849716187
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.6858295202255249,
+        "train_accuracy": 0.7071691751480103,
+        "val_loss": 1.2767199277877808,
+        "val_accuracy": 0.4815270935960591,
+        "test_accuracy": 0.44696969696969696,
+        "test_loss": 1.625875473022461
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.6738762259483337,
+        "train_accuracy": 0.7257959842681885,
+        "val_loss": 1.0869202613830566,
+        "val_accuracy": 0.5431034482758621,
+        "test_accuracy": 0.4981060606060606,
+        "test_loss": 1.4125739336013794
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.5809739232063293,
+        "train_accuracy": 0.7632662057876587,
+        "val_loss": 0.9323863983154297,
+        "val_accuracy": 0.6083743842364532,
+        "test_accuracy": 0.5353535353535354,
+        "test_loss": 1.22993004322052
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.5780971050262451,
+        "train_accuracy": 0.764132559299469,
+        "val_loss": 1.3024282455444336,
+        "val_accuracy": 0.4987684729064039,
+        "test_accuracy": 0.4577020202020202,
+        "test_loss": 1.6113829612731934
+      },
+      {
+        "epoch": 9,
+        "train_loss": 0.5282608270645142,
+        "train_accuracy": 0.790123462677002,
+        "val_loss": 0.49530133605003357,
+        "val_accuracy": 0.8226600985221675,
+        "test_accuracy": 0.7064393939393939,
+        "test_loss": 0.754944920539856
+      },
+      {
+        "epoch": 10,
+        "train_loss": 0.4950704574584961,
+        "train_accuracy": 0.8085336685180664,
+        "val_loss": 0.7042273879051208,
+        "val_accuracy": 0.7179802955665024,
+        "test_accuracy": 0.6521464646464646,
+        "test_loss": 1.0226960182189941
+      },
+      {
+        "epoch": 11,
+        "train_loss": 0.43634435534477234,
+        "train_accuracy": 0.836040735244751,
+        "val_loss": 1.1214370727539062,
+        "val_accuracy": 0.6009852216748769,
+        "test_accuracy": 0.5164141414141414,
+        "test_loss": 1.5035289525985718
+      },
+      {
+        "epoch": 12,
+        "train_loss": 0.4240064024925232,
+        "train_accuracy": 0.839722752571106,
+        "val_loss": 1.5383763313293457,
+        "val_accuracy": 0.5049261083743842,
+        "test_accuracy": 0.44507575757575757,
+        "test_loss": 1.9633208513259888
+      },
+      {
+        "epoch": 13,
+        "train_loss": 0.39326828718185425,
+        "train_accuracy": 0.8494693636894226,
+        "val_loss": 0.37033215165138245,
+        "val_accuracy": 0.854679802955665,
+        "test_accuracy": 0.7960858585858586,
+        "test_loss": 0.6902612447738647
+      },
+      {
+        "epoch": 14,
+        "train_loss": 0.3568562865257263,
+        "train_accuracy": 0.8704786896705627,
+        "val_loss": 0.5364239811897278,
+        "val_accuracy": 0.8017241379310345,
+        "test_accuracy": 0.7241161616161617,
+        "test_loss": 0.9131182432174683
+      },
+      {
+        "epoch": 15,
+        "train_loss": 0.36451902985572815,
+        "train_accuracy": 0.8652805089950562,
+        "val_loss": 1.3437732458114624,
+        "val_accuracy": 0.5467980295566502,
+        "test_accuracy": 0.47474747474747475,
+        "test_loss": 1.8329095840454102
+      },
+      {
+        "epoch": 16,
+        "train_loss": 0.35184451937675476,
+        "train_accuracy": 0.8698288798332214,
+        "val_loss": 1.547885537147522,
+        "val_accuracy": 0.5110837438423645,
+        "test_accuracy": 0.4678030303030303,
+        "test_loss": 1.928828239440918
+      },
+      {
+        "epoch": 17,
+        "train_loss": 0.32416534423828125,
+        "train_accuracy": 0.8745939135551453,
+        "val_loss": 0.6004305481910706,
+        "val_accuracy": 0.7820197044334976,
+        "test_accuracy": 0.6723484848484849,
+        "test_loss": 1.1266179084777832
+      },
+      {
+        "epoch": 18,
+        "train_loss": 0.31528109312057495,
+        "train_accuracy": 0.8849902749061584,
+        "val_loss": 0.4214189350605011,
+        "val_accuracy": 0.8472906403940886,
+        "test_accuracy": 0.7411616161616161,
+        "test_loss": 0.8564431071281433
+      },
+      {
+        "epoch": 19,
+        "train_loss": 0.30675578117370605,
+        "train_accuracy": 0.8817414045333862,
+        "val_loss": 0.9970006942749023,
+        "val_accuracy": 0.6564039408866995,
+        "test_accuracy": 0.5744949494949495,
+        "test_loss": 1.4665600061416626
+      },
+      {
+        "epoch": 20,
+        "train_loss": 0.30650460720062256,
+        "train_accuracy": 0.885640025138855,
+        "val_loss": 0.8307221531867981,
+        "val_accuracy": 0.7142857142857143,
+        "test_accuracy": 0.6079545454545454,
+        "test_loss": 1.3608975410461426
+      },
+      {
+        "epoch": 21,
+        "train_loss": 0.25599873065948486,
+        "train_accuracy": 0.8999350070953369,
+        "val_loss": 0.37796321511268616,
+        "val_accuracy": 0.874384236453202,
+        "test_accuracy": 0.7689393939393939,
+        "test_loss": 0.8774312138557434
+      },
+      {
+        "epoch": 22,
+        "train_loss": 0.2608911693096161,
+        "train_accuracy": 0.9014511704444885,
+        "val_loss": 0.316867858171463,
+        "val_accuracy": 0.8793103448275862,
+        "test_accuracy": 0.7986111111111112,
+        "test_loss": 0.7201554179191589
+      },
+      {
+        "epoch": 23,
+        "train_loss": 0.2616565227508545,
+        "train_accuracy": 0.904483437538147,
+        "val_loss": 0.28538745641708374,
+        "val_accuracy": 0.8990147783251231,
+        "test_accuracy": 0.80239898989899,
+        "test_loss": 0.7210555672645569
+      },
+      {
+        "epoch": 24,
+        "train_loss": 0.25462692975997925,
+        "train_accuracy": 0.9040502309799194,
+        "val_loss": 0.2735740542411804,
+        "val_accuracy": 0.9064039408866995,
+        "test_accuracy": 0.8162878787878788,
+        "test_loss": 0.6569114327430725
+      },
+      {
+        "epoch": 25,
+        "train_loss": 0.25554755330085754,
+        "train_accuracy": 0.9038336873054504,
+        "val_loss": 0.5540773272514343,
+        "val_accuracy": 0.812807881773399,
+        "test_accuracy": 0.7051767676767676,
+        "test_loss": 1.025246500968933
+      },
+      {
+        "epoch": 26,
+        "train_loss": 0.2597062885761261,
+        "train_accuracy": 0.9029672741889954,
+        "val_loss": 0.23295970261096954,
+        "val_accuracy": 0.9150246305418719,
+        "test_accuracy": 0.8263888888888888,
+        "test_loss": 0.6341257095336914
+      },
+      {
+        "epoch": 27,
+        "train_loss": 0.22320425510406494,
+        "train_accuracy": 0.9202945828437805,
+        "val_loss": 0.20989124476909637,
+        "val_accuracy": 0.9248768472906403,
+        "test_accuracy": 0.8503787878787878,
+        "test_loss": 0.5399214625358582
+      },
+      {
+        "epoch": 28,
+        "train_loss": 0.22553011775016785,
+        "train_accuracy": 0.9170457124710083,
+        "val_loss": 0.6370071768760681,
+        "val_accuracy": 0.7783251231527094,
+        "test_accuracy": 0.6679292929292929,
+        "test_loss": 1.190242052078247
+      },
+      {
+        "epoch": 29,
+        "train_loss": 0.22640161216259003,
+        "train_accuracy": 0.9176954627037048,
+        "val_loss": 0.34595274925231934,
+        "val_accuracy": 0.8793103448275862,
+        "test_accuracy": 0.7998737373737373,
+        "test_loss": 0.8054096698760986
+      },
+      {
+        "epoch": 30,
+        "train_loss": 0.21502362191677094,
+        "train_accuracy": 0.9224604964256287,
+        "val_loss": 0.27435553073883057,
+        "val_accuracy": 0.9064039408866995,
+        "test_accuracy": 0.8175505050505051,
+        "test_loss": 0.7134591937065125
+      }
+    ]
+  },
+  "comparison": {
+    "test_images": 1584,
+    "federated": {
+      "accuracy": 0.6363636363636364,
+      "precision_macro": 0.6155960155136859,
+      "recall_macro": 0.6349403429062411,
+      "f1_macro": 0.5506916028489398,
+      "loss": 0.9758463501930237,
+      "accuracy_ci95": [
+        0.6123701087485389,
+        0.6596973317316701
+      ]
+    },
+    "federated_training_seconds": 2339.1596939999727,
+    "centralized": {
+      "accuracy": 0.8503787878787878,
+      "precision_macro": 0.8598921077161407,
+      "recall_macro": 0.8488117725935376,
+      "f1_macro": 0.8454380465881715,
+      "loss": 0.5399214625358582,
+      "accuracy_ci95": [
+        0.831965543125991,
+        0.8670966303301016
+      ]
+    },
+    "centralized_training_seconds": 2068.507197699975,
+    "difference_federated_minus_centralized": {
+      "accuracy": -0.2140151515151515,
+      "precision_macro": -0.24429609220245474,
+      "recall_macro": -0.21387142968729644,
+      "f1_macro": -0.29474644373923164,
+      "loss": 0.4359248876571655
+    },
+    "centralized_raw_upload_bytes": 126457076,
+    "federated_training_transfer_bytes": 108537186
+  },
+  "communication": {
+    "num_clients": 3,
+    "rounds": 15,
+    "model_parameters": 299892,
+    "model_payload_bytes": 1205840,
+    "avg_update_bytes": 1206087.0666666667,
+    "raw_data_bytes_total": 126457076,
+    "raw_data_bytes_by_client": {
+      "hospital_a": 37384095,
+      "hospital_b": 38737414,
+      "hospital_c": 50335567
+    },
+    "training_uplink_bytes": 54273918,
+    "training_downlink_bytes": 54263268,
+    "total_training_transfer_bytes": 108537186,
+    "evaluation_downlink_bytes": 54264393,
+    "total_transfer_incl_evaluation_bytes": 162801579,
+    "avg_training_bytes_per_round": 7235812.4,
+    "ratios": {
+      "update_to_total_raw": 0.009537521385253812,
+      "round_transfer_to_total_raw": 0.0572195137581704,
+      "total_training_transfer_to_total_raw": 0.8582927063725561
+    },
+    "centralized_alternative_bytes": 126457076,
+    "notes": [
+      "Message sizes are the real serialised lengths of the parameter payloads exchanged in the simulation.",
+      "Raw data size is the on-disk size of the image files held by the hospitals (compressed JPEG/PNG).",
+      "Evaluation traffic (clients scoring the global model on local validation data) is reported separately."
+    ],
+    "per_round": [
+      {
+        "round": 1,
+        "downlink_bytes": 3617550,
+        "uplink_bytes": 3618259,
+        "eval_downlink_bytes": 3617625,
+        "training_bytes": 7235809,
+        "cumulative_training_bytes": 7235809
+      },
+      {
+        "round": 2,
+        "downlink_bytes": 3617550,
+        "uplink_bytes": 3618258,
+        "eval_downlink_bytes": 3617625,
+        "training_bytes": 7235808,
+        "cumulative_training_bytes": 14471617
+      },
+      {
+        "round": 3,
+        "downlink_bytes": 3617550,
+        "uplink_bytes": 3618260,
+        "eval_downlink_bytes": 3617625,
+        "training_bytes": 7235810,
+        "cumulative_training_bytes": 21707427
+      },
+      {
+        "round": 4,
+        "downlink_bytes": 3617550,
+        "uplink_bytes": 3618260,
+        "eval_downlink_bytes": 3617625,
+        "training_bytes": 7235810,
+        "cumulative_training_bytes": 28943237
+      },
+      {
+        "round": 5,
+        "downlink_bytes": 3617550,
+        "uplink_bytes": 3618260,
+        "eval_downlink_bytes": 3617625,
+        "training_bytes": 7235810,
+        "cumulative_training_bytes": 36179047
+      },
+      {
+        "round": 6,
+        "downlink_bytes": 3617550,
+        "uplink_bytes": 3618262,
+        "eval_downlink_bytes": 3617625,
+        "training_bytes": 7235812,
+        "cumulative_training_bytes": 43414859
+      },
+      {
+        "round": 7,
+        "downlink_bytes": 3617550,
+        "uplink_bytes": 3618263,
+        "eval_downlink_bytes": 3617625,
+        "training_bytes": 7235813,
+        "cumulative_training_bytes": 50650672
+      },
+      {
+        "round": 8,
+        "downlink_bytes": 3617550,
+        "uplink_bytes": 3618263,
+        "eval_downlink_bytes": 3617625,
+        "training_bytes": 7235813,
+        "cumulative_training_bytes": 57886485
+      },
+      {
+        "round": 9,
+        "downlink_bytes": 3617550,
+        "uplink_bytes": 3618261,
+        "eval_downlink_bytes": 3617625,
+        "training_bytes": 7235811,
+        "cumulative_training_bytes": 65122296
+      },
+      {
+        "round": 10,
+        "downlink_bytes": 3617553,
+        "uplink_bytes": 3618263,
+        "eval_downlink_bytes": 3617628,
+        "training_bytes": 7235816,
+        "cumulative_training_bytes": 72358112
+      },
+      {
+        "round": 11,
+        "downlink_bytes": 3617553,
+        "uplink_bytes": 3618264,
+        "eval_downlink_bytes": 3617628,
+        "training_bytes": 7235817,
+        "cumulative_training_bytes": 79593929
+      },
+      {
+        "round": 12,
+        "downlink_bytes": 3617553,
+        "uplink_bytes": 3618264,
+        "eval_downlink_bytes": 3617628,
+        "training_bytes": 7235817,
+        "cumulative_training_bytes": 86829746
+      },
+      {
+        "round": 13,
+        "downlink_bytes": 3617553,
+        "uplink_bytes": 3618253,
+        "eval_downlink_bytes": 3617628,
+        "training_bytes": 7235806,
+        "cumulative_training_bytes": 94065552
+      },
+      {
+        "round": 14,
+        "downlink_bytes": 3617553,
+        "uplink_bytes": 3618262,
+        "eval_downlink_bytes": 3617628,
+        "training_bytes": 7235815,
+        "cumulative_training_bytes": 101301367
+      },
+      {
+        "round": 15,
+        "downlink_bytes": 3617553,
+        "uplink_bytes": 3618266,
+        "eval_downlink_bytes": 3617628,
+        "training_bytes": 7235819,
+        "cumulative_training_bytes": 108537186
+      }
+    ]
+  }
+}

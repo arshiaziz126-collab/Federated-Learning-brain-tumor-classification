@@ -1,0 +1,114 @@
+{
+  "principle": "Raw patient MRI data never leaves the hospital.",
+  "raw_data_location": {
+    "Hospital A": "data/federated_clients/hospital_a",
+    "Hospital B": "data/federated_clients/hospital_b",
+    "Hospital C": "data/federated_clients/hospital_c"
+  },
+  "raw_data_bytes_by_hospital": {
+    "hospital_a": 37384095,
+    "hospital_b": 38737414,
+    "hospital_c": 50335567
+  },
+  "raw_images_per_hospital": {
+    "Hospital A": 1467,
+    "Hospital B": 1890,
+    "Hospital C": 2072
+  },
+  "shared_with_server": {
+    "model_parameter_tensors": 25,
+    "model_parameters": 299892,
+    "update_bytes": 1206087.0666666667,
+    "per_update_metadata": [
+      "round number",
+      "sample count",
+      "scalar training/validation loss and accuracy"
+    ],
+    "server_side_payload_validation": {
+      "updates_validated": 45,
+      "rule": "tensor count, shapes and floating-point dtype must match the global model"
+    }
+  },
+  "stays_local": [
+    "MRI image files",
+    "patient-level raw data",
+    "local train/validation datasets",
+    "per-image predictions and labels"
+  ],
+  "audit": {
+    "checks": [
+      {
+        "check": "Hospital datasets are disjoint (no image content shared between hospitals)",
+        "passed": true,
+        "detail": {
+          "hospital_a & hospital_b": 0,
+          "hospital_a & hospital_c": 0,
+          "hospital_b & hospital_c": 0
+        }
+      },
+      {
+        "check": "Held-out test images are not present in any hospital",
+        "passed": true,
+        "detail": {
+          "hospital_a": 0,
+          "hospital_b": 0,
+          "hospital_c": 0
+        }
+      },
+      {
+        "check": "Local validation images are not used for local training",
+        "passed": true,
+        "detail": {
+          "hospital_a": 0,
+          "hospital_b": 0,
+          "hospital_c": 0
+        }
+      },
+      {
+        "check": "Each hospital has its own physical data folder",
+        "passed": true,
+        "detail": {
+          "hospital_a": "data/federated_clients/hospital_a",
+          "hospital_b": "data/federated_clients/hospital_b",
+          "hospital_c": "data/federated_clients/hospital_c"
+        }
+      }
+    ],
+    "all_passed": true
+  },
+  "mechanisms": [
+    {
+      "name": "Data locality (train where the data lives)",
+      "implemented": true
+    },
+    {
+      "name": "Federated averaging (only parameters aggregated)",
+      "implemented": true
+    },
+    {
+      "name": "Server-side payload validation",
+      "implemented": true
+    },
+    {
+      "name": "Differential privacy",
+      "implemented": false
+    },
+    {
+      "name": "Secure aggregation",
+      "implemented": false
+    },
+    {
+      "name": "Encryption of updates in transit",
+      "implemented": false
+    },
+    {
+      "name": "Homomorphic encryption",
+      "implemented": false
+    }
+  ],
+  "limitations": [
+    "Hospitals are simulated as separate folders and objects inside one Python process; no real network or separate machines are involved.",
+    "Model updates are exchanged in plain form. Published research shows that updates can leak information about training data, and this prototype does not defend against that.",
+    "Isolation is verified on file content (MD5), so visually similar but non-identical images may still appear in different hospitals."
+  ]
+}

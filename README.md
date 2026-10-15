@@ -5,6 +5,8 @@
 Three simulated hospitals train one shared CNN without ever sharing a patient scan. This repository is the live web demo of that system: the trained model runs directly in your browser, so an uploaded MRI image never leaves your device.
 
 **Live demo:** https://neurofed-ai.vercel.app
+<img width="1920" height="899" alt="Screenshot 2026-10-15 142727" src="https://github.com/user-attachments/assets/9bceb708-e6e8-405f-aa0a-a8f942a548be" />
+
 **Training code (Python, TensorFlow):** [`python/`](python) folder
 
 > Research prototype for academic use. Not a clinical diagnostic tool. It requires clinical validation before any real-world medical use.
@@ -19,6 +21,8 @@ Three simulated hospitals train one shared CNN without ever sharing a patient sc
 - **Federated analytics:** accuracy and loss per round, per-hospital performance, communication cost, per-class metrics and the confusion matrix.
 - **Privacy and security:** what stays inside each hospital, what is shared, the automated isolation checks, and what is not yet implemented.
 - **Centralized vs federated:** the same model trained both ways on the same data, plus a FedAvg vs FedProx comparison.
+- <img width="1920" height="869" alt="Screenshot 2026-10-15 142841" src="https://github.com/user-attachments/assets/822451f8-cc97-4203-8055-d9ee788489bd" />
+
 
 Every number on the site is read from the result files of the actual training run. Nothing is hard-coded.
 
@@ -31,6 +35,8 @@ Held-out test set of 1,584 images, never used for training or model selection.
 | Centralized baseline (pooled data) | 85.0% | 84.5% | all 5,429 |
 | Federated, FedAvg | 63.6% | 55.1% | 0 |
 | Federated, FedProx (μ = 0.01) | 62.9% | 54.4% | 0 |
+<img width="1920" height="885" alt="Screenshot 2026-10-15 142855" src="https://github.com/user-attachments/assets/3a0c327c-cab9-4c35-a042-ad2d230ca603" />
+
 
 **Communication:** one model update is about **1.21 MB**, against **126.5 MB** of raw MRI data held by the hospitals.
 
@@ -51,8 +57,11 @@ Hospital C ──┘          images stay on site          parameters only      
 5. The round with the best federated validation accuracy becomes the final model.
 
 **Model:** a compact CNN with 299,892 parameters, 128 × 128 grayscale input, four convolution blocks with group normalisation, global average pooling and a softmax over four classes.
+<img width="1920" height="909" alt="Screenshot 2026-10-15 142910" src="https://github.com/user-attachments/assets/3ed9e48e-3193-4e71-9741-111dd91d283c" />
 
 **In-browser inference:** the trained weights are exported from Keras and run in plain JavaScript. Image preprocessing reproduces the Python pipeline exactly, so predictions match the Python model (tested: identical inputs, class probabilities within 0.0001).
+<img width="1920" height="883" alt="Screenshot 2026-10-15 142933" src="https://github.com/user-attachments/assets/b8b2c6f8-1f2d-4c33-b25f-860360e49f95" />
+
 
 ## Dataset
 
@@ -68,6 +77,8 @@ Implemented:
 - In this web demo, uploaded images are processed in the browser and never sent to a server.
 
 Not yet implemented: encryption in transit (TLS), secure aggregation and differential privacy. These are listed as future work.
+<img width="1920" height="888" alt="Screenshot 2026-10-15 142945" src="https://github.com/user-attachments/assets/20fa3c21-e973-4a6d-b42f-876ff4b728fd" />
+
 
 ## Repository layout
 
